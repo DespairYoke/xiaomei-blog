@@ -2,56 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b496bfa6-a42e-4bc3-b0f7-72f21c166486" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/base.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/base.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/index.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/info.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/info.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/infopic.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/infopic.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/m.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/m.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/gbook.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/gbook.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/1.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/1.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/10.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/10.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/11.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/11.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/12.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/12.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/2.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/2.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/3.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/3.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/4.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/4.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/5.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/5.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/6.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/6.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/7.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/7.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/8.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/8.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/9.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/9.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/left.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/left.png" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/left1.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/left1.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/li.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/li.png" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/right.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/right.png" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/right1.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/right1.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/top.png" afterPath="$PROJECT_DIR$/src/main/resources/static/images/top.png" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx1.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx1.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx10.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx10.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx2.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx2.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx3.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx3.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx4.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx4.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx5.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx5.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx6.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx6.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx7.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx7.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx8.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx8.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/tx9.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/tx9.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/wx.jpg" afterPath="$PROJECT_DIR$/src/main/resources/static/images/wx.jpg" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/info.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/info.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/infopic.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/infopic.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/js/comm.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/comm.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/js/hc-sticky.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/hc-sticky.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/js/jquery.min.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/js/modernizr.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/modernizr.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/js/page.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/js/page2.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/page2.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/js/piccontent.min.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/piccontent.min.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/js/scrollReveal.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/scrollReveal.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/list.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/share.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/share.html" />
-      <change beforePath="$PROJECT_DIR$/xiaomei-blog.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/share.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/share.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,18 +18,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/info.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1708">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="504">
+              <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -106,8 +48,8 @@
       <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaomei/example/controller/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,7 +73,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaomei/example/serviceImpl/ImageServceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
-              <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+              <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/gbook.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
-              <caret line="86" column="22" lean-forward="true" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+              <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -152,8 +94,18 @@
       <file leaf-file-name="share.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/share.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-665">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="92">
+              <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaomei/example/MyApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -184,6 +136,7 @@
       <find>sel</find>
       <find>select</find>
       <find>images</find>
+      <find>../static/</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,11 +160,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xiaomei/example/serviceImpl/ArticleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/ArticleMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaomei/example/domain/Article.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaomei/example/service/ImageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaomei/example/serviceImpl/ImageServceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaomei/example/mapper/ImageMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xiaomei/example/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/share.html" />
       </list>
     </option>
   </component>
@@ -972,12 +926,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1536801777702</updated>
-      <workItem from="1536801782918" duration="19043000" />
+      <workItem from="1536801782918" duration="19804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19043000" />
+    <option name="totallyTimeSpent" value="19804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="724" y="153" width="2073" height="1193" extended-state="0" />
@@ -1003,7 +957,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294606" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293023" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283721" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24766125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -1025,7 +979,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1118,14 +1072,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaomei/example/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaomei/example/mapper/ArticleMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -1159,8 +1105,8 @@
         <state relative-caret-position="316">
           <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="e#991#992#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1197,14 +1143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaomei/example/service/ImageService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1226,7 +1164,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaomei/example/serviceImpl/ImageServceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
-          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1236,25 +1174,41 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/gbook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
-          <caret line="86" column="22" lean-forward="true" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaomei/example/MyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xiaomei/example/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="20" column="42" lean-forward="true" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/share.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-665">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="92">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding />
         </state>
       </provider>
