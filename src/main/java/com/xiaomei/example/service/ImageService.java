@@ -12,5 +12,7 @@ import java.util.List;
  */
 public interface ImageService {
 
-    List<Image> selectAll();
+    List<Image> selectAll(Integer currpage,Integer pageSize);
+
+    long countImages();
 }

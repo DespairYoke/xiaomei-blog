@@ -21,10 +21,20 @@ public class ImageServceImpl implements ImageService {
     @Autowired
     private ImageMapper imageMapper;
     @Override
-    public List<Image> selectAll() {
+    public List<Image> selectAll(Integer currpage,Integer pageSize) {
         ImageExample imageExample = new ImageExample();
+        imageExample.setStartRow((currpage-1)*pageSize);
+        imageExample.setPageSize(pageSize);
         imageExample.createCriteria();
         List<Image> images = imageMapper.selectByExample(imageExample);
         return images;
+    }
+
+    @Override
+    public long countImages() {
+        ImageExample imageExample = new ImageExample();
+        imageExample.createCriteria();
+        long l = imageMapper.countByExample(imageExample);
+        return l;
     }
 }

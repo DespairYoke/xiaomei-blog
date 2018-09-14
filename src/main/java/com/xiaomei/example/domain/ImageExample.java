@@ -5,6 +5,27 @@ import java.util.Date;
 import java.util.List;
 
 public class ImageExample {
+
+    private Integer startRow;
+
+    private Integer pageSize;
+
+    public Integer getStartRow() {
+        return startRow;
+    }
+
+    public void setStartRow(Integer startRow) {
+        this.startRow = startRow;
+    }
+
+    public Integer getPageSize() {
+        return pageSize;
+    }
+
+    public void setPageSize(Integer pageSize) {
+        this.pageSize = pageSize;
+    }
+
     protected String orderByClause;
 
     protected boolean distinct;

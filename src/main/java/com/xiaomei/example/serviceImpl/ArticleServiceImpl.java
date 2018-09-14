@@ -23,7 +23,31 @@ public class ArticleServiceImpl implements ArticleService {
     private ArticleMapper articleMapper;
     @Override
     public List<Article> selectAll() {
-        List<Article> articles = articleMapper.selectAll();
+        ArticleExample articleExample = new ArticleExample();
+        articleExample.createCriteria();
+        List<Article> articles = articleMapper.selectByExample(articleExample);
         return articles;
+    }
+
+    @Override
+    public List<Article> selectNote() {
+        ArticleExample articleExample = new ArticleExample();
+        articleExample.createCriteria().andTypeEqualTo((byte) 0);
+        List<Article> articles = articleMapper.selectByExample(articleExample);
+        return articles;
+    }
+
+    @Override
+    public List<Article> selectFeel() {
+        ArticleExample articleExample = new ArticleExample();
+        articleExample.createCriteria().andTypeEqualTo((byte) 1);
+        List<Article> articles = articleMapper.selectByExample(articleExample);
+        return articles;
+    }
+
+    @Override
+    public Article selectById(Integer id) {
+        Article article = articleMapper.selectByPrimaryKey(id);
+        return article;
     }
 }

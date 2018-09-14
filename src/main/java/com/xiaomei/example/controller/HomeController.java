@@ -8,8 +8,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.xml.ws.soap.Addressing;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -34,9 +36,36 @@ public class HomeController {
     }
 
     @RequestMapping("/share")
-    public String picture(Model model) {
-        List<Image> images = imageService.selectAll();
+    public String picture(Model model,@RequestParam(required =true) Integer currpage) {
+        List<Image> images = imageService.selectAll(currpage-1,12);
+        long count = imageService.countImages();
+        List<String> pagelist = new ArrayList();
+
+        model.addAttribute("pagelength",count/12+1);
+        model.addAttribute("count",count);
+        model.addAttribute("currpage",currpage);
         model.addAttribute("images",images);
         return "share";
     }
+
+    @RequestMapping("/note")
+    public String note(Model model) {
+        List<Article> articles = articleService.selectNote();
+        model.addAttribute("articles",articles);
+        return "index";
+    }
+
+    @RequestMapping("/feel")
+    public String feel(Model model) {
+        List<Article> articles = articleService.selectFeel();
+        model.addAttribute("articles",articles);
+        return "index";
+    }
+    @RequestMapping("/content")
+    public String content(Model model,Integer id) {
+        Article article = articleService.selectById(id);
+        model.addAttribute("article",article);
+        return "info";
+    }
+
 }

@@ -11,4 +11,10 @@ import java.util.List;
  */
 public interface ArticleService {
     List<Article> selectAll();
+
+    List<Article> selectNote();
+
+    List<Article> selectFeel();
+
+    Article selectById(Integer id);
 }

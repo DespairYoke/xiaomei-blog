@@ -7,11 +7,13 @@ public class Article {
 
     private String title;
 
+    private String content;
+
     private Date createat;
 
     private String path;
 
-    private String content;
+    private Byte type;
 
     public Integer getId() {
         return id;
@@ -27,6 +29,14 @@ public class Article {
 
     public void setTitle(String title) {
         this.title = title == null ? null : title.trim();
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content == null ? null : content.trim();
     }
 
     public Date getCreateat() {
@@ -45,13 +55,11 @@ public class Article {
         this.path = path == null ? null : path.trim();
     }
 
-    public String getContent() {
-        return content;
+    public Byte getType() {
+        return type;
     }
 
-    public void setContent(String content) {
-        this.content = content == null ? null : content.trim();
+    public void setType(Byte type) {
+        this.type = type;
     }
-
-
 }

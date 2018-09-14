@@ -38,13 +38,13 @@
                enableSelectByExample="true"
                selectByExampleQueryId="true"
         ></table>
-        <table tableName="image" domainObjectName="Image"
-               enableCountByExample="true"
-               enableUpdateByExample="true"
-               enableDeleteByExample="true"
-               enableSelectByExample="true"
-               selectByExampleQueryId="true"
-        ></table>
+        <!--<table tableName="image" domainObjectName="Image"-->
+               <!--enableCountByExample="true"-->
+               <!--enableUpdateByExample="true"-->
+               <!--enableDeleteByExample="true"-->
+               <!--enableSelectByExample="true"-->
+               <!--selectByExampleQueryId="true"-->
+        <!--&gt;</table>-->
         <!--<table tableName="power_params" domainObjectName="PowerParams"-->
                <!--enableCountByExample="true"-->
                <!--enableUpdateByExample="true"-->
