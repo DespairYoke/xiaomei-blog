@@ -39,4 +39,11 @@ public class HomeController {
         model.addAttribute("images",images);
         return "share";
     }
+
+    @RequestMapping("/gbook")
+    public String gbook(Model model) {
+        List<Article> articles = articleService.selectAll();
+        model.addAttribute("articles",articles);
+        return "gbook";
+    }
 }
