@@ -10,7 +10,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.xml.ws.soap.Addressing;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,4 +67,10 @@ public class HomeController {
         return "info";
     }
 
+    @RequestMapping("/gbook")
+    public String gbook(Model model) {
+        List<Article> articles = articleService.selectAll();
+        model.addAttribute("articles",articles);
+        return "gbook";
+    }
 }
