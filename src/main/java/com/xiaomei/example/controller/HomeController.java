@@ -96,4 +96,8 @@ public class HomeController {
             return "index";
         }
     }
+    @RequestMapping("/edit")
+    public String edit() {
+        return "edit";
+    }
 }
