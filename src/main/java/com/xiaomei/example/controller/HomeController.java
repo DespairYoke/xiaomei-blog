@@ -2,8 +2,10 @@ package com.xiaomei.example.controller;
 
 import com.xiaomei.example.domain.Article;
 import com.xiaomei.example.domain.Image;
+import com.xiaomei.example.domain.User;
 import com.xiaomei.example.service.ArticleService;
 import com.xiaomei.example.service.ImageService;
+import com.xiaomei.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,6 +28,8 @@ public class HomeController {
 
     @Autowired
     private ImageService imageService;
+    @Autowired
+    private UserService userService;
 
     @RequestMapping("/")
     public String home(Model model) {
@@ -72,5 +76,24 @@ public class HomeController {
         List<Article> articles = articleService.selectAll();
         model.addAttribute("articles",articles);
         return "gbook";
+    }
+
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @RequestMapping("/userlogin")
+    public String userlogin(Model model,User user) {
+
+        System.out.println("zzzzzz");
+        System.out.println(user);
+        List<User> list =userService.selectByUsernameAndPassword(user);
+        if (list.isEmpty()) {
+            model.addAttribute("msg","密码错误或该用户不存在!");
+            return "login";
+        }else {
+            return "index";
+        }
     }
 }

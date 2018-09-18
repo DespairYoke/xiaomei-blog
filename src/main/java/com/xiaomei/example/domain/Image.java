@@ -11,6 +11,8 @@ public class Image {
 
     private Date createat;
 
+    private String userid;
+
     public Integer getId() {
         return id;
     }
@@ -41,5 +43,13 @@ public class Image {
 
     public void setCreateat(Date createat) {
         this.createat = createat;
+    }
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid == null ? null : userid.trim();
     }
 }

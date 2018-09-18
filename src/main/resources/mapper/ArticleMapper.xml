@@ -8,6 +8,7 @@
     <result column="createAt" jdbcType="TIMESTAMP" property="createat" />
     <result column="path" jdbcType="VARCHAR" property="path" />
     <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="userId" jdbcType="VARCHAR" property="userid" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -68,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, title, content, createAt, path, type
+    id, title, content, createAt, path, type, userId
   </sql>
   <select id="selectByExample" parameterType="com.xiaomei.example.domain.ArticleExample" resultMap="BaseResultMap">
     select
@@ -84,6 +85,7 @@
     <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
+
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -103,11 +105,11 @@
   </delete>
   <insert id="insert" parameterType="com.xiaomei.example.domain.Article">
     insert into article (id, title, content, 
-      createAt, path, type
-      )
+      createAt, path, type, 
+      userId)
     values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
-      #{createat,jdbcType=TIMESTAMP}, #{path,jdbcType=VARCHAR}, #{type,jdbcType=TINYINT}
-      )
+      #{createat,jdbcType=TIMESTAMP}, #{path,jdbcType=VARCHAR}, #{type,jdbcType=TINYINT}, 
+      #{userid,jdbcType=VARCHAR})
   </insert>
   <insert id="insertSelective" parameterType="com.xiaomei.example.domain.Article">
     insert into article
@@ -130,6 +132,9 @@
       <if test="type != null">
         type,
       </if>
+      <if test="userid != null">
+        userId,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -149,6 +154,9 @@
       </if>
       <if test="type != null">
         #{type,jdbcType=TINYINT},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -179,6 +187,9 @@
       <if test="record.type != null">
         type = #{record.type,jdbcType=TINYINT},
       </if>
+      <if test="record.userid != null">
+        userId = #{record.userid,jdbcType=VARCHAR},
+      </if>
     </set>
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -191,7 +202,8 @@
       content = #{record.content,jdbcType=VARCHAR},
       createAt = #{record.createat,jdbcType=TIMESTAMP},
       path = #{record.path,jdbcType=VARCHAR},
-      type = #{record.type,jdbcType=TINYINT}
+      type = #{record.type,jdbcType=TINYINT},
+      userId = #{record.userid,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -214,6 +226,9 @@
       <if test="type != null">
         type = #{type,jdbcType=TINYINT},
       </if>
+      <if test="userid != null">
+        userId = #{userid,jdbcType=VARCHAR},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -223,7 +238,8 @@
       content = #{content,jdbcType=VARCHAR},
       createAt = #{createat,jdbcType=TIMESTAMP},
       path = #{path,jdbcType=VARCHAR},
-      type = #{type,jdbcType=TINYINT}
+      type = #{type,jdbcType=TINYINT},
+      userId = #{userid,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

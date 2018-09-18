@@ -15,6 +15,8 @@ public class Article {
 
     private Byte type;
 
+    private String userid;
+
     public Integer getId() {
         return id;
     }
@@ -61,5 +63,13 @@ public class Article {
 
     public void setType(Byte type) {
         this.type = type;
+    }
+
+    public String getUserid() {
+        return userid;
+    }
+
+    public void setUserid(String userid) {
+        this.userid = userid == null ? null : userid.trim();
     }
 }

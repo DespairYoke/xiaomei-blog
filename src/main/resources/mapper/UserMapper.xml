@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.xiaomei.example.mapper.ImageMapper">
-  <resultMap id="BaseResultMap" type="com.xiaomei.example.domain.Image">
+<mapper namespace="com.xiaomei.example.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.xiaomei.example.domain.User">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="title" jdbcType="VARCHAR" property="title" />
-    <result column="path" jdbcType="VARCHAR" property="path" />
-    <result column="createAt" jdbcType="TIMESTAMP" property="createat" />
-    <result column="userId" jdbcType="VARCHAR" property="userid" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -67,108 +65,87 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, title, path, createAt, userId
+    id, username, password
   </sql>
-  <select id="selectByExample" parameterType="com.xiaomei.example.domain.ImageExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.xiaomei.example.domain.UserExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     'true' as QUERYID,
     <include refid="Base_Column_List" />
-    from image
+    from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
     <if test="orderByClause != null">
       order by ${orderByClause}
     </if>
-    <if test="startRow != null and pageSize != null and pageSize != 0">
-      limit #{startRow},#{pageSize}
-    </if>
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from image
+    from user
     where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from image
+    delete from user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.xiaomei.example.domain.ImageExample">
-    delete from image
+  <delete id="deleteByExample" parameterType="com.xiaomei.example.domain.UserExample">
+    delete from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.xiaomei.example.domain.Image">
-    insert into image (id, title, path, 
-      createAt, userId)
-    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{path,jdbcType=VARCHAR}, 
-      #{createat,jdbcType=TIMESTAMP}, #{userid,jdbcType=VARCHAR})
+  <insert id="insert" parameterType="com.xiaomei.example.domain.User">
+    insert into user (id, username, password
+      )
+    values (#{id,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}
+      )
   </insert>
-  <insert id="insertSelective" parameterType="com.xiaomei.example.domain.Image">
-    insert into image
+  <insert id="insertSelective" parameterType="com.xiaomei.example.domain.User">
+    insert into user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
         id,
       </if>
-      <if test="title != null">
-        title,
+      <if test="username != null">
+        username,
       </if>
-      <if test="path != null">
-        path,
-      </if>
-      <if test="createat != null">
-        createAt,
-      </if>
-      <if test="userid != null">
-        userId,
+      <if test="password != null">
+        password,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
         #{id,jdbcType=INTEGER},
       </if>
-      <if test="title != null">
-        #{title,jdbcType=VARCHAR},
+      <if test="username != null">
+        #{username,jdbcType=VARCHAR},
       </if>
-      <if test="path != null">
-        #{path,jdbcType=VARCHAR},
-      </if>
-      <if test="createat != null">
-        #{createat,jdbcType=TIMESTAMP},
-      </if>
-      <if test="userid != null">
-        #{userid,jdbcType=VARCHAR},
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.xiaomei.example.domain.ImageExample" resultType="java.lang.Long">
-    select count(*) from image
+  <select id="countByExample" parameterType="com.xiaomei.example.domain.UserExample" resultType="java.lang.Long">
+    select count(*) from user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update image
+    update user
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.title != null">
-        title = #{record.title,jdbcType=VARCHAR},
+      <if test="record.username != null">
+        username = #{record.username,jdbcType=VARCHAR},
       </if>
-      <if test="record.path != null">
-        path = #{record.path,jdbcType=VARCHAR},
-      </if>
-      <if test="record.createat != null">
-        createAt = #{record.createat,jdbcType=TIMESTAMP},
-      </if>
-      <if test="record.userid != null">
-        userId = #{record.userid,jdbcType=VARCHAR},
+      <if test="record.password != null">
+        password = #{record.password,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null">
@@ -176,40 +153,30 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update image
+    update user
     set id = #{record.id,jdbcType=INTEGER},
-      title = #{record.title,jdbcType=VARCHAR},
-      path = #{record.path,jdbcType=VARCHAR},
-      createAt = #{record.createat,jdbcType=TIMESTAMP},
-      userId = #{record.userid,jdbcType=VARCHAR}
+      username = #{record.username,jdbcType=VARCHAR},
+      password = #{record.password,jdbcType=VARCHAR}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.xiaomei.example.domain.Image">
-    update image
+  <update id="updateByPrimaryKeySelective" parameterType="com.xiaomei.example.domain.User">
+    update user
     <set>
-      <if test="title != null">
-        title = #{title,jdbcType=VARCHAR},
+      <if test="username != null">
+        username = #{username,jdbcType=VARCHAR},
       </if>
-      <if test="path != null">
-        path = #{path,jdbcType=VARCHAR},
-      </if>
-      <if test="createat != null">
-        createAt = #{createat,jdbcType=TIMESTAMP},
-      </if>
-      <if test="userid != null">
-        userId = #{userid,jdbcType=VARCHAR},
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.xiaomei.example.domain.Image">
-    update image
-    set title = #{title,jdbcType=VARCHAR},
-      path = #{path,jdbcType=VARCHAR},
-      createAt = #{createat,jdbcType=TIMESTAMP},
-      userId = #{userid,jdbcType=VARCHAR}
+  <update id="updateByPrimaryKey" parameterType="com.xiaomei.example.domain.User">
+    update user
+    set username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

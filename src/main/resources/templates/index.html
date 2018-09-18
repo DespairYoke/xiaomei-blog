@@ -25,7 +25,7 @@
 <header class="header-navigation" id="header">
   <nav><div class="logo"><a href="/">个人博客</a></div>
     <h2 id="mnavh"><span class="navicon"></span></h2>
-    <ul id="starlist">
+    <ul id="starlist" style="float: left;margin-left: 200px">
       <li><a href="/">网站首页</a></li>
       <li><a href="share?startRow=1">我的相册</a></li>
       <li onmouseover="show()" onmouseleave="hide()"><a href="list.html">我的日记</a>
@@ -38,6 +38,10 @@
 
       <li><a href="gbook">茜茜</a></li>
       <li><a href="info.html">内容页</a></li>
+    </ul>
+      <ul id="starlist" style="float: right;margin-right: -300px">
+      <li>注册</li>
+      <li><a th:href="login">登录</a></li>
     </ul>
 </nav>
 </header>
